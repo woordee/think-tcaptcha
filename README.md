@@ -10,24 +10,12 @@ thinkphp5 腾讯验证码类库
 ###模板里输出验证码
 
 ~~~
-<div>{:captcha_img()}</div>
+<div>{:tcaptcha('register',320,40,0)}</div>
 ~~~
-或者
-~~~
-<div><img src="{:captcha_src()}" alt="captcha" /></div>
-~~~
-> 上面两种的最终效果是一样的
 
-### 控制器里验证
-使用TP5的内置验证功能即可
+### 手动验证
 ~~~
-$this->validate($data,[
-    'captcha|验证码'=>'required|captcha'
-]);
-~~~
-或者手动验证
-~~~
-if(!captcha_check($captcha)){
+if(!tcaptcha_check($ticket)){
  //验证失败
 };
 ~~~

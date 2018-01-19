@@ -1,0 +1,20 @@
+{
+    "name": "tj646/think-tcaptcha",
+    "description": "tencent captcha package for thinkphp5",
+    "authors": [
+        {
+            "name": "tj646",
+            "email": "forrest.tu@transn.com"
+        }
+    ],
+    "license": "Apache-2.0",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "tcaptcha\\": "tcaptcha/"
+        },
+        "files": [
+            "tcaptcha/helper.php"
+        ]
+    }
+}

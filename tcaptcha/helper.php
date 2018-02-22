@@ -35,6 +35,7 @@ function tcaptcha($business_id = "captcha", $width = 320, $height = 40, $autoloa
 		capDestroy();
 		capInit(document.getElementById(\"T{$business_id}\"), {callback:function(retJson) {
 		if (retJson.ret == 0) {
+			if(typeof({$business_id}_callback) == 'function') {$business_id}_callback();
 			document.getElementById(\"ticket{$business_id}\").value = retJson.ticket;
 			$('#ticket{$business_id}').parent().find('.empty,.Validform_checktip').length && $('#ticket{$business_id}').parent().find('.empty,.Validform_checktip').html('');
 		}

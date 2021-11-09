@@ -1,9 +1,9 @@
 {
-    "name": "transn/think-tcaptcha",
+    "name": "woordee/think-tcaptcha",
     "description": "tencent captcha package for thinkphp5",
     "authors": [
         {
-            "name": "tj646",
+            "name": "forrest.tu",
             "email": "forrest.tu@transn.com"
         }
     ],
